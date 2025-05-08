@@ -23,7 +23,7 @@ export function ThemeToggle() {
 
     // Automatically set the theme based on the user's system preference on initial load
     const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(userPrefersDark ? 'ligth' : 'light');
+    setTheme(userPrefersDark ? 'light' : 'light');
 
     // Optional: Listen for system preference changes and update the theme
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
