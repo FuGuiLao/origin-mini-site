@@ -2,7 +2,6 @@ import { useEffect, useId, useRef } from 'react'
 import { animate, timeline } from 'motion'
 
 const stars = [
-  // [cx, cy, dim, blur]
   [4, 4, true, true],
   [4, 44, true],
   [36, 22],
@@ -141,7 +140,7 @@ function Constellation({ points }) {
     <>
       <path
         ref={ref}
-        stroke="white"
+        stroke="currentColor"
         strokeOpacity="0.2"
         strokeDasharray={1}
         strokeDashoffset={1}
@@ -163,15 +162,18 @@ export function StarField() {
   return (
     <svg
       viewBox="0 0 881 211"
-      fill="white"
+      fill="currentColor"
       aria-hidden="true"
-      className="pointer-events-none absolute -right-44 top-14 w-[55.0625rem] origin-top-right rotate-[30deg] overflow-visible opacity-70"
+      className="pointer-events-none absolute -right-44 top-14 w-[55.0625rem] origin-top-right rotate-[30deg] overflow-visible opacity-70 text-red-800"
     >
       <defs>
         <filter id={blurId}>
           <feGaussianBlur in="SourceGraphic" stdDeviation=".5" />
         </filter>
       </defs>
+      {/* Dark background fill */}
+      <rect width="100%" height="100%" fill="rgb(39 39 42)" /> {/* zinc-800 */}
+
       {constellations.map((points, constellationIndex) => (
         <Constellation key={constellationIndex} points={points} />
       ))}
