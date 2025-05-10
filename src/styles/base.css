@@ -1,26 +1,26 @@
 @font-face {
-  font-family: 'Cabinet Grotesk';
+  font-family: 'Inter';
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url('/fonts/Cabinet-Grotesk.var.woff2') format('woff2');
+  src: url('/fonts/Inter-roman.var.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
+  font-family: 'Inter';
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url('/fonts/Cabinet-Grotesk.var.woff2') format('woff2');
+  src: url('/fonts/Inter-italic.var.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
+  font-family: 'Mona Sans';
   font-weight: 200 900;
   font-display: block;
   font-style: normal;
   font-stretch: 75% 125%;
-  src: url('/fonts/Cabinet-Grotesk.var.woff2') format('woff2');
+  src: url('/fonts/Mona-Sans.var.woff2') format('woff2');
 }
 
 @tailwind base;
@@ -29,22 +29,4 @@
   flex: auto;
   display: flex;
   flex-direction: column;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-text-fill-color: white;
-  background-color: transparent;
-  transition: background-color 5000s ease-in-out 0s;
-}
-
-input:focus {
-  caret-color: white;
 }
